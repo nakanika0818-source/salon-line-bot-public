@@ -1,0 +1,39 @@
+{
+  "name": "salon-line-assistant",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "type-check": "tsc --noEmit",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "format": "prettier --write src tests supabase *.json *.md *.ts *.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.95.0",
+    "lucide-react": "^0.577.0",
+    "next": "16.4.2",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "zod": "^4.3.0"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.10",
+    "@tailwindcss/postcss": "^4.2.0",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.8",
+    "@types/jsdom": "^30.0.0",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "jsdom": "^30.1.3",
+    "prettier": "^3.9.10",
+    "tailwindcss": "^4.2.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.0"
+  }
+}
