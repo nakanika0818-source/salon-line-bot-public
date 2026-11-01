@@ -66,6 +66,7 @@ values ('ここをオーナーのUUIDへ置き換える');
 2. VercelでProjectを作り、Frameworkは自動検出のNext.js、Node.jsは `package.json` の `engines`（24.x）に従います。
 3. 関数のリージョンは `vercel.json` の `regions` で指定します（Hobbyは1リージョンのみ）。練習用のSupabaseはシドニー（ap-southeast-2）のため `syd1` にしています。Supabaseを別の地域に作った場合は、近いリージョン（東京なら `hnd1`）に変えます。未指定だと米国東部（`iad1`）で動き、DBとの往復で返信が遅くなります。
 4. Production環境だけに次を登録します。Previewにはコピーしません（Previewはデモモードのまま動きます）。値はVercelの入力欄に直接貼り、チャット・スクリーンショットに残しません。
+   - 練習用の公開環境は、この手順と異なり、17件すべてをProductionとPreviewの両方に登録している（2026年10月31日に確認、未対応）。解消するまでPreviewデプロイを作らないこと（`docs/DELIVERY_CHECKLIST.md` の注意を参照）。新しく作る環境では、最初の登録時にProductionだけを選びます。Secret型は登録後に値を読み出せず、後から環境だけ変えたときに値が残るかは公式資料に書かれていません。
 
 | 変数 | 値の目安 |
 |---|---|
